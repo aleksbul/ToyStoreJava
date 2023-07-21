@@ -67,11 +67,9 @@ public class Store {
             int frequency = Integer.parseInt(scanner.nextLine());
             toyToChange.setFrequency(frequency);
             System.out.printf("\nThe frequency of the toy '%s' was successfully changed.\n", toyToChange.getName());
-        }
-        else {
+        } else {
             System.out.println("\nThere is no toy with such name in the store.");
         }
-
     }
 
     public Toy definePrizeToy() {

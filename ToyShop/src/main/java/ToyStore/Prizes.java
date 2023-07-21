@@ -6,7 +6,6 @@ import java.util.Deque;
 public class Prizes {
 
 
-
     private Deque<Toy> prizes;
 
     public Prizes() {
@@ -18,10 +17,9 @@ public class Prizes {
     }
 
     public void print() {
-        if (prizes.size() == 0){
+        if (prizes.size() == 0) {
             System.out.println("\nThe queue is still empty. Please add toys to the queue.");
-        }
-        else {
+        } else {
             for (Toy t : prizes) {
                 System.out.print(t);
             }
@@ -29,21 +27,16 @@ public class Prizes {
     }
 
 
-    public Toy addPrizeToFile(){
+    public Toy addPrizeToFile() {
         if (prizes.size() != 0) {
             Toy toyPrize = prizes.pollFirst();
             System.out.println("The prize toy is:");
             System.out.print(toyPrize);
             return toyPrize;
-        }
-        else {
+        } else {
             System.out.println("The queue is empty. Please add toys to the queue.");
             return null;
         }
 
     }
-
-
-
-
 }

@@ -10,7 +10,6 @@ public class Toy {
     int quantity;
     int frequency;
 
-
     public Toy(String name, int quantity, int frequency) {
         id = Math.abs(hash(name));
         this.name = name;
@@ -29,7 +28,6 @@ public class Toy {
     public String toString() {
         return String.format("id: %d,   name: %s,   quantity: %d,   frequency: %d\n", id, name, quantity, frequency);
     }
-
 
     public int getId() {
         return id;
@@ -66,8 +64,5 @@ public class Toy {
         Toy toy = (Toy) o;
         return Objects.equals(getName(), toy.getName());
     }
-
-
-
 }
 
